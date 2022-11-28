@@ -19,16 +19,14 @@ public class EjemploMetodosGenericos {
 		losEmpleados[0] = new Empleados("Ana",6, 13);
 		System.out.println(ExaminaArrays.getElementos(losEmpleados));
 		
-		
-	}
-	
+	}	
 }
 
 
 ////  clase con METODO GENERICO   //////////////
 class ExaminaArrays{
 	
-	// (RECIBE POR PARÁMETRO UN ARRAY )
+	// Método genérico (RECIBE POR PARÁMETRO UN ARRAY )
 	public static <T> String getElementos(T[] elArray) {		
 		return "El array tiene " + elArray.length + " elementos.";
 	}
@@ -44,7 +42,7 @@ class ExaminaArrays{
 		return  (String) objetoMenor;
 	}
 }
-// clase
+//////////// clase         ///////////////////////////
 class Empleados{
 	private String nombre;
 	private double sueldo;	
